@@ -1,0 +1,25 @@
+<Config>
+<RuleChain>
+	<Rule>
+		<Name>Remove Foot String 1</Name> 
+		<Type>FilterByString</Type> 
+		<Parameters>
+			<StartWith>This material is provided</StartWith>
+			<FilterType>Paragraph</FilterType> 
+		</Parameters>
+	</Rule>
+	<Rule>
+		<Name>Remove Empty Line</Name> 
+		<Type>FilterByWordNumber</Type> 
+		<Parameters>
+			<Threshold>0</Threshold>
+		</Parameters>
+	</Rule>
+</RuleChain>
+<CustomizedRules>
+	<Rule>
+		<Type>FilterCustomRuleTest</Type>
+		<javaClass>com.ssc.ooa.ai.conversion.paragraph.rule.impl.FilterCustomRuleTest</javaClass>
+	</Rule>
+</CustomizedRules>
+</Config>
